@@ -3,3 +3,44 @@
     font-family: cursive;
     color: goldenrod;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #0073e6;
+}
+
+p {
+    font-size: 18px;
+}
+
+mark {
+    background-color: yellow;
+}
+
+a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #004d99;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #777;
+}
