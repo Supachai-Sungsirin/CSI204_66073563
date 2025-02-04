@@ -3,55 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Markdown Demo</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        h1 {
+            color: darkcyan;
+        }
+    </style>
 </head>
 <body>
-    <h1>About Me</h1>
+    <h1>Markdown Preview</h1>
     <div id="content"></div>
 
     <script>
         const markdownContent = `
-# สวัสดีครับ! 👋
+# Markdown Example
 
-## แนะนำตัว
-
-- **ชื่อ:** ศุภชัย สังข์ศิรินทร์
-- **อายุ:** 20 ปี
-- **อาชีพ:** นักศึกษาวิทยาการคอมพิวเตอร์ (ปี 2)
-- **ทักษะ:** React, JavaScript, HTML, CSS
-
-## ความสนใจ
-
-- 💻 ~~ชอบพัฒนาเว็บแอปพลิเคชัน~~
-- 🎮 ชอบเล่นเกม FPS
-- 🛏️ ชอบนอน
-- 📚 สนใจเรื่อง UX/UI และ Design Thinking
-
-## ตัวอย่าง Markdown ที่ใช้
-
-1. **ตัวหนา** → **Hello**
-2. *ตัวเอียง* → *Hello*
-3. ~~ขีดฆ่า~~ → ~~Hello~~
-4. ` + "`โค้ดแถวเดียว`" + ` → \`console.log('Hello')\`
+1. **Bold Text** → **Hello**
+2. *Italic Text* → *Hello*
+3. ~~Strikethrough~~ → ~~Hello~~
+4. ` + "`Inline Code`" + ` → \`console.log('Hello')\`
 5. 
 \`\`\`js
-// โค้ดบล็อก
+// Code Block
 console.log("Hello World");
 \`\`\`
-6. [ลิงก์ไป GitHub](https://github.com/Supachai-Sungsirin)
-7. - รายการแบบไม่มีลำดับ\n   - รายการถัดไป
-8. 1. รายการแบบมีลำดับ\n   2. รายการถัดไป
-9. > คำพูดอ้างอิง \n   > "ทำวันนี้ให้ดีที่สุด"
-10. ![รูปตัวอย่าง](https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg)
-
-## ติดต่อผมได้ที่
-
-- 📧 **อีเมล:** supachai.sun@spumail.net
-- 🌐 [GitHub](https://github.com/Supachai-Sungsirin)
+6. [Link](https://example.com) → [Example](https://example.com)
+7. - List Item 1\n   - List Item 2\n8. 1. Ordered List 1\n   2. Ordered List 2\n9. > Blockquote → \n   > This is a quote
+10. ![Image](https://via.placeholder.com/100) → \n   ![Alt Text](https://via.placeholder.com/100)
         `;
 
         document.getElementById("content").innerHTML = marked.parse(markdownContent);
     </script>
 </body>
 </html>
+
