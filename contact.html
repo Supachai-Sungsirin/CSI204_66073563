@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supachai's Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="content"></div>
+    </div>
+
+    <script>
+        const contentData = `
+# Supachai's Profile
+
+## 🏆 Who Am I?
+สวัสดีครับ! ผมคือ **Supachai** นักพัฒนาซอฟต์แวร์ที่มีความสนใจใน **Frontend Development และ UX/UI Design**  
+กำลังศึกษาอยู่ชั้นปีที่ 2 สาขาวิทยาการคอมพิวเตอร์ และกำลังพัฒนา **ระบบจัดการคลังสินค้า** 🚀  
+
+## 💡 Skills & Expertise
+- **ภาษาโปรแกรม:** JavaScript (React, JSX), HTML, CSS  
+- **เครื่องมือที่ใช้:** React Bootstrap, Postman, Git & GitHub  
+- **ฮาร์ดแวร์ที่ใช้งาน:** Intel i5-9400F, GTX 1650, RAM 16GB DDR4-2666  
+- **เทคนิคที่สนใจ:** User-Centered Design (UCD), Design Thinking  
+
+## 🎓 Education
+- **กำลังศึกษาปีที่ 2** คณะวิทยาการคอมพิวเตอร์  
+
+## 🚀 Current Project: Warehouse Management System
+- ระบบคลังสินค้าที่พัฒนาร่วมกับทีม มี 3 ระดับผู้ใช้:  
+  - **User (พนักงาน):** ขอเบิกสินค้า  
+  - **Admin (เจ้าหน้าที่คลัง):** ตรวจสอบคำขอ, จัดการสินค้า  
+  - **Super Admin:** กำหนดสิทธิ์, อนุมัติการตั้งค่า  
+
+**ฟีเจอร์หลัก:**  
+✅ ค้นหาสินค้า 📦  
+✅ ระบบบาร์โค้ด / QR Code 🔍  
+✅ รายงานข้อมูล 📊  
+
+## 📬 Contact Me
+- 📧 **อีเมล:** supachai.sun@spumail.net
+- 🔗 **GitHub:** [github.com/supachai](https://github.com/Supachai-Sungsirin)  
+- 🌍 **Portfolio:** [myproject](https://www.canva.com/design/DAGWv3N7F3U/tobOZq9l_HNj-WuJx1V1Qg/edit?utm_content=DAGWv3N7F3U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
+
+---
+*หากสนใจร่วมงานหรือแลกเปลี่ยนความรู้ ทักมาได้เลยคับ!* 🚀 
+        `;
+
+        document.getElementById("content").innerHTML = marked.parse(contentData);
+    </script>
+</body>
+</html>
+
